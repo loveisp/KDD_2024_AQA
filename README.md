@@ -1,4 +1,4 @@
-# KDD Cup 2024 OAG-Challenge AQA track 3rd place solution
+# KDD Cup 2024 OAG-Challenge AQA 3rd place solution
 
 ## Prerequisites
 - Linux
