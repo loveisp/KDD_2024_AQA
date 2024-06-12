@@ -1,9 +1,5 @@
 # 用预训练模型做推断
 
-## 文件结构
-
-这里需要把第一阶段的数据集放入 ../AQA/ ，第二阶段的数据集放入 ../AQA/AQA-test-public/
-
 ## NV-Embed-v1
 
 该预训练模型来自：https://huggingface.co/nvidia/NV-Embed-v1
