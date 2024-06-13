@@ -38,8 +38,7 @@ python merge_model.py ，合并后的模型会存到 ./sfr_merged/
 
 和 infer_with_pretrained 里做的推断一样，这里也是用 ./sfr_merged/ 里的模型进行推断，得到 embedding
 
+执行以下代码：
 - python infer_sfrm.py ，可生成第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/sfrm.npy
-
-- python infer_sfrm_extra.py ，可生成第二阶段的 passages 的 embedding ，生成后存储到 ../embeds/sfrm_extra.npy
-
+- python infer_sfrm_extra.py ，可生成第二阶段不包含在第一阶段的 passages 的 embedding，生成后存储到 ../embeds/sfrm_extra.npy
 - python infer_sfrm_df.py final ，可生成第二阶段的 queries 的 embedding ，生成后存储到 ../embeds/sfrm_final.npy

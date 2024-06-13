@@ -4,7 +4,7 @@
 
 该预训练模型来自：https://huggingface.co/nvidia/NV-Embed-v1
 
-依次执行以下代码：
+执行以下代码：
 - python infer_nvembed.py ，可生成第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/nvembed.npy
 - python infer_nvembed_extra.py ，可生成第二阶段不包含在第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/nvembed_extra.npy
 - python infer_nvembed_df.py final ，可生成第二阶段的 queries 的 embedding ，生成后存储到 ../embeds/nvembed_final.npy
@@ -19,7 +19,7 @@
 
 该预训练模型来自：https://huggingface.co/Salesforce/SFR-Embedding-Mistral
 
-依次执行以下代码：
+执行以下代码：
 - python infer_sfr.py ，可生成第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/sfr.npy
 - python infer_sfr_extra.py ，可生成第二阶段不包含在第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/sfr_extra.npy
 - python infer_sfr_df.py final ，可生成第二阶段的 queries 的 embedding ，生成后存储到 ../embeds/sfr_final.npy
@@ -32,7 +32,7 @@
 
 该预训练模型来自：https://huggingface.co/GritLM/GritLM-7B
 
-依次执行以下代码：
+执行以下代码：
 - python infer_gritlm.py ，可生成第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/gritlm.npy
 - python infer_gritlm_extra.py ，可生成第二阶段不包含在第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/gritlm_extra.npy
 - python infer_gritlm_df.py final ，可生成第二阶段的 queries 的 embedding ，生成后存储到 ../embeds/gritlm_final.npy
@@ -45,7 +45,7 @@
 
 该预训练模型来自：https://huggingface.co/Linq-AI-Research/Linq-Embed-Mistral
 
-依次执行以下代码：
+执行以下代码：
 - python infer_linq.py ，可生成第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/linq.npy
 - python infer_linq_extra.py ，可生成第二阶段不包含在第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/linq_extra.npy
 - python infer_linq_df.py final ，可生成第二阶段的 queries 的 embedding ，生成后存储到 ../embeds/linq_final.npy
