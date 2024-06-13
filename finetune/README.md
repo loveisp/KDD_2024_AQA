@@ -12,7 +12,7 @@
 
 同样，如果 ../embeds/sfr_train.npy 不存在，则需要先执行 cd ../infer_with_pretrained && python infer_sfr_df.py train
 
-执行 python create_ds.py ，生成 tevatron 训练所需的数据集，存储到 ./ds/train.jsonl
+执行 python create_ds.py ，生成 tevatron 训练所需的数据集，生成的数据集文件会存到 ./ds/train.jsonl
 
 ## 微调
 
