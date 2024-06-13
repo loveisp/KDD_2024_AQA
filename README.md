@@ -1,5 +1,11 @@
 # KDD Cup 2024 OAG-Challenge AQA 3rd place solution
 
+## 团队成员
+
+- 戴玮
+- 付鹏
+- 甘淳井
+
 ## Prerequisites
 
 - Python 3.9
