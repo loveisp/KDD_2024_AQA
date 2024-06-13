@@ -22,14 +22,24 @@
 
 model_name_or_path 后的路径需要改为 SFR-Embedding-Mistral 所在的路径
 
-微调后的 lora 会存储到 sfr_finetuned 目录下，我这里已经在该目录下放了之前训练好的文件
+微调后的 lora 会存储到 sfr_finetuned 目录下，我已经在该目录下放了之前训练好的文件
 
 ## 合并模型
 
 合并之后，推断开销会小一些，所以最好还是合并
 
-python merge_model.py ，合并后的模型存储到 ./sfr_merged/
+python merge_model.py ，合并后的模型会存到 ./sfr_merged/
 
 执行以下命令，从本地模型路径复制一些文件过去（具体路径需要做修改）：
 - cp /root/workspace/dataset/hf_data/models/Salesforce/SFR-Embedding-Mistral/tokenizer* ./sfr_merged/
 - cp /root/workspace/dataset/hf_data/models/Salesforce/SFR-Embedding-Mistral/special_tokens_map.json ./sfr_merged/
+
+## 用合并后的模型推断
+
+和 infer_with_pretrained 里做的推断一样，这里也是用 ./sfr_merged/ 里的模型进行推断，得到 embedding
+
+- python infer_sfrm.py ，可生成第一阶段的 passages 的 embedding ，生成后存储到 ../embeds/sfrm.npy
+
+- python infer_sfrm_extra.py ，可生成第二阶段的 passages 的 embedding ，生成后存储到 ../embeds/sfrm_extra.npy
+
+- python infer_sfrm_df.py final ，可生成第二阶段的 queries 的 embedding ，生成后存储到 ../embeds/sfrm_final.npy
