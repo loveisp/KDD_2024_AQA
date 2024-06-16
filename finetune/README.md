@@ -6,6 +6,12 @@
 
 不建议 clone 最新的 tevatron
 
+sfr_finetuned 目录已经存放了我微调之后的 lora，可以用这个 lora 去和 SFR-Embedding-Mistral （预训练模型，可从 huggingface 下载）合并
+
+也可以直接从百度网盘下载我合并好的模型：
+- 链接：https://pan.baidu.com/s/1LdKujPgDGkrFXrB6MFf8ZA?pwd=gf1j 
+- 提取码：gf1j 
+
 ## 生成训练数据集
 
 如果 ../embeds/sfr.npy 不存在，则需要先执行 cd ../infer_with_pretrained && python infer_sfr.py

@@ -7,6 +7,10 @@
 
 这里 {model_name} 是 sfrm, nvembed, sfr, gritlm, linq
 
+以下各步骤的中间变量文件，我已放在了百度网盘：
+- 链接：https://pan.baidu.com/s/1AqCOlq_gYXwabP3fxy5PtQ?pwd=tq6n 
+- 提取码：tq6n 
+
 ## 合并 embedding
 
 之前为了节省推断时间，第二阶段的 passages 只是对和第一阶段相比多出来的那部分进行推断，现在需要把两部分合并起来，成为完整的所有 passages 的 embedding 文件
