@@ -71,7 +71,7 @@ if DEBUG:
     length = 10000
     passages = generate_long_passages(length, n)
 else:
-    json_path = '../AQA/AQA-test-public/pid_to_title_abs_update_filter.json'
+    json_path = '../AQA/pid_to_title_abs_new.json'
     _, passages = get_passages(json_path)
 print('{} passages are read in total.'.format(len(passages)))
 
